@@ -13,6 +13,22 @@ body {
     min-height: 100%;
 }
 
+#grass{
+    background-color: rgb(131, 199, 92);
+}
+
+#fire{
+    background-color: rgb(199, 92, 92);
+}
+
+#poison{
+    background-color: rgb(160, 92, 199);
+}
+
+#water{
+    background-color: rgb(92, 135, 199);
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -21,7 +37,7 @@ body {
     
 }
 
-header {
+body > header {
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -35,7 +51,7 @@ header > img {
 
 header > h1 {
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #principal {
@@ -67,6 +83,119 @@ footer {
     padding: 1.2rem;
     font-size: 11px;
     text-align: center;
+}
+
+.card{
+    border-radius: 1.5rem;
+    height: 25.5rem;
+    padding:0.5rem;
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#id{
+    opacity: 60%;
+}
+
+.pokemon{
+    width: 8rem;
+    position: absolute;
+    bottom:calc(50% + 3rem);
+    left:calc(50% - 4rem);
+}
+
+.caracteristicas{
+    background-color: white;
+    padding-top: 4rem;
+    
+}
+
+div > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header > h2{
+    font-size: 1.25rem;
+}
+
+.elementos, .medidas{
+    margin:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medida{
+    color: black;
+    display: flex;
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    align-items: center;
+}
+
+.elemento{
+    padding:0.1rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.elemento > *, .medida > *{
+    margin-left:0.3rem;
+    margin-right:0.3rem;
+}
+.icono{
+    width: 1rem;
+}
+
+#habilidades{
+    color:black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#habilidades > *{
+    display: flex;
+    align-items: center;
+}
+
+.caracteristica{
+    opacity: 50%;
+    font-size: 0.78rem;
+}
+
+.nivel{
+    font-size: 0.78rem;
+}
+
+.barra {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.relleno {
+    width: 15%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
 }
 
 @media (min-width: 1024px) {

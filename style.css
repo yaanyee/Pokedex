@@ -42,6 +42,7 @@ body > header {
     display: flex;
     align-items: center;
     box-shadow: 0 10px 10px rgba(160, 100, 255, 0.25);
+    background-color: whitesmoke;
 }
 
 header > img {
@@ -60,6 +61,8 @@ header > h1 {
     margin: 1rem;
     margin-bottom: 0;
     flex: 1;
+    padding-bottom:4rem;
+
 }
 
 #principal > * {
@@ -83,9 +86,11 @@ footer {
     padding: 1.2rem;
     font-size: 11px;
     text-align: center;
+    z-index: 3;
 }
 
 .card{
+    position: relative;
     border-radius: 1.5rem;
     height: 25.5rem;
     padding:0.5rem;
@@ -99,17 +104,22 @@ footer {
     opacity: 60%;
 }
 
+#tarjetas > *{
+    margin-top: 2rem;
+}
+
 .pokemon{
     width: 8rem;
     position: absolute;
-    bottom:calc(50% + 3rem);
+    bottom:calc(50% + 1rem);
     left:calc(50% - 4rem);
+    z-index: 2;
 }
 
 .caracteristicas{
     background-color: white;
     padding-top: 4rem;
-    
+    z-index: 1;
 }
 
 div > header{
@@ -155,6 +165,7 @@ header > h2{
     margin-left:0.3rem;
     margin-right:0.3rem;
 }
+
 .icono{
     width: 1rem;
 }

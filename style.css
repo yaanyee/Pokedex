@@ -14,19 +14,23 @@ body {
 }
 
 #grass{
-    background-color: rgb(131, 199, 92);
+    background-color: #a2ce69;
 }
 
 #fire{
-    background-color: rgb(199, 92, 92);
+    background-color: #d36255;
 }
 
 #poison{
-    background-color: rgb(160, 92, 199);
+    background-color: #9756dc;
 }
 
 #water{
     background-color: rgb(92, 135, 199);
+}
+
+#wind{
+    background-color: #a2bfeb;
 }
 
 body {
@@ -38,7 +42,7 @@ body {
 }
 
 body > header {
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     box-shadow: 0 10px 10px rgba(160, 100, 255, 0.25);
@@ -55,27 +59,25 @@ header > h1 {
     font-size: 1.25rem;
 }
 
-#principal {
-    display: grid;
-    grid-template-rows: 6em 1fr;
-    margin: 1rem;
-    margin-bottom: 0;
-    flex: 1;
-    padding-bottom:4rem;
+#principal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
     justify-content: center;
-}
-
-#principal > * {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    align-items: center;
 }
 
 input {
     padding:1rem;
     border-radius: 0.7rem;
     background-color: rgb(235, 234, 234);
-    border: 1px solid grey;
+    border: 1px solid rgb(155, 155, 155);
+    width: 100%;
+    height: 3.25rem;
     max-width: 720px;
+    margin-bottom: 2.25rem;
 }
 
 footer {
@@ -90,35 +92,6 @@ footer {
     z-index: 3;
 }
 
-.card{
-    position: relative;
-    border-radius: 1.5rem;
-    height: 25.5rem;
-    padding:0.5rem;
-    color:white;
-    max-width: 20rem;
-    min-width: 15rem;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-#id{
-    opacity: 60%;
-}
-
-#tarjetas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#tarjetas > *{
-    margin-top: 2rem;
-}
-
 .pokemon{
     width: 8rem;
     position: absolute;
@@ -127,39 +100,64 @@ footer {
     z-index: 2;
 }
 
-.caracteristicas{
-    background-color: white;
-    padding-top: 4rem;
-    z-index: 1;
+.icono{
+    width: 1rem;
 }
 
-div > header{
+#id{
+    opacity: 60%;
+}
+
+#tarjetas{
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap:2rem;
+}
+
+.card{
+    position: relative;
+    color:white;
+    max-width: 28rem;
+    min-width: 15rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 26rem;
+    padding:0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card > header{
+    padding:0.5rem;
+    padding-top:0.5rem;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 6.6rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
-header > h2{
+.caracteristicas{
+    padding-top: 4rem;
+    color:black;
+    background-color: white;
+    height: 100%;
+    z-index: 1;
+    min-width: calc(15rem - 1rem);
+}
+
+#nombre{
     font-size: 1.25rem;
 }
 
-.elementos, .medidas{
+.elementos{
     margin:0.5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.medida{
-    color: black;
-    display: flex;
-    font-size: 0.7rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
     align-items: center;
+    color: white;
 }
 
 .elemento{
@@ -172,26 +170,37 @@ header > h2{
     margin-right: 0.3rem;
 }
 
+.medidas{
+    margin:0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medida{
+    color: black;
+    display: flex;
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    align-items: center;
+    font-weight: bold;
+}
+
 .elemento > *, .medida > *{
-    margin-left:0.3rem;
-    margin-right:0.3rem;
+    margin-left:0.2rem;
+    margin-right:0.2rem;
 }
 
-.icono{
-    width: 1rem;
-}
-
-#habilidades{
-    color:black;
+.habilidades{
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-between;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 0.5rem;
 }
 
-#habilidades > *{
+.habilidades > *{
     display: grid;
     grid-template-columns: 2rem 2rem 1fr;
     align-items: center;
@@ -223,25 +232,21 @@ header > h2{
 
 @media (min-width: 1024px) {
 
-    #principal{
-        justify-content: center;
+    input{
+        min-width: 720px;
     }
 
+    .card{
+        max-width: 20rem;
+    }
+
+    #principal{
+        margin-left: 26rem;
+        margin-right: 26rem;
+    }
     #tarjetas{
         display: grid;
+        gap:2rem;
         grid-template-columns: 1fr 1fr 1fr;
-        
     }
-
-    #tarjetas > *{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    #principal{
-        padding-left:20rem;
-        padding-right:20rem;
-    }
-
-
 }

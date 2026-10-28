@@ -43,18 +43,21 @@ body {
 
 body > header {
     padding: 1.5rem;
-    display: flex;
-    align-items: center;
     box-shadow: 0 10px 10px rgba(160, 100, 255, 0.25);
     background-color: whitesmoke;
 }
 
-header > img {
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo > img {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-header > h1 {
+#logo > h1 {
     margin-left: 1rem;
     font-size: 1.25rem;
 }

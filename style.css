@@ -29,7 +29,7 @@ body {
     background-color: rgb(92, 135, 199);
 }
 
-#wind{
+#flying{
     background-color: #a2bfeb;
 }
 
@@ -151,6 +151,7 @@ footer {
     height: 100%;
     z-index: 1;
     min-width: calc(15rem - 1rem);
+    border-radius: 1.25rem;
 }
 
 #nombre{
@@ -233,6 +234,24 @@ footer {
     height: 100%;
     background-color: #000000;
     border-radius: 10px;
+}
+
+.cargando{
+    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
+    background-color: white;
+}
+
+.interior{
+    background-color: rgb(228, 228, 228);
+    border-radius: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interior > img {
+    width: 10rem;
 }
 
 @media (min-width: 1024px) {

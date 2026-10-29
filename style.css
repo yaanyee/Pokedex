@@ -242,7 +242,11 @@ footer {
     }
 
     .card{
-        max-width: 20rem;
+        min-width: 19rem;
+    }
+
+    .caracteristicas{
+        min-width: calc(19rem - 1rem);
     }
 
     #principal{

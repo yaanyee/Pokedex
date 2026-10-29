@@ -141,7 +141,7 @@ footer {
     padding-top:0.5rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6.6rem;
+    margin-bottom: 6rem;
 }
 
 .caracteristicas{
@@ -264,7 +264,7 @@ footer {
         min-width: 19rem;
     }
 
-    .caracteristicas{
+    .caracteristicas, .interior{
         min-width: calc(19rem - 1rem);
     }
 

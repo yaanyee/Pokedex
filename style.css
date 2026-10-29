@@ -13,23 +13,23 @@ body {
     min-height: 100%;
 }
 
-#grass{
+.grass{
     background-color: #a2ce69;
 }
 
-#fire{
+.fire{
     background-color: #d36255;
 }
 
-#poison{
+.poison{
     background-color: #9756dc;
 }
 
-#water{
+.water{
     background-color: rgb(92, 135, 199);
 }
 
-#flying{
+.flying{
     background-color: #a2bfeb;
 }
 
@@ -100,7 +100,7 @@ footer {
 .pokemon{
     width: 8rem;
     position: absolute;
-    bottom:calc(50% + 1rem);
+    bottom:calc(50% + 0.5rem);
     left:calc(50% - 4rem);
     z-index: 2;
 }
@@ -109,7 +109,7 @@ footer {
     width: 1rem;
 }
 
-#id{
+.id{
     opacity: 60%;
 }
 
@@ -154,7 +154,7 @@ footer {
     border-radius: 1.25rem;
 }
 
-#nombre{
+.nombre{
     font-size: 1.25rem;
 }
 

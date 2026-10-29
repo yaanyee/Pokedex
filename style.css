@@ -42,8 +42,10 @@ body {
 }
 
 body > header {
+    display:flex;
+    justify-content: space-between;
     padding: 1.5rem;
-    box-shadow: 0 10px 10px rgba(160, 100, 255, 0.25);
+    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
     background-color: whitesmoke;
 }
 

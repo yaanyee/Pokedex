@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+#grass{
+    background-color: #a2ce69;
+}
+
+#fire{
+    background-color: #d36255;
+}
+
+#poison{
+    background-color: #9756dc;
+}
+
+#water{
+    background-color: rgb(92, 135, 199);
+}
+
+#wind{
+    background-color: #a2bfeb;
+}
+
+#cargando{
+    background-color: white;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    
+}
+
+body > header {
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
+    background-color: whitesmoke;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo > img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#logo > h1 {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding:1rem;
+    border-radius: 0.7rem;
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(155, 155, 155);
+    width: 100%;
+    height: 3.25rem;
+    max-width: 720px;
+    margin-bottom: 2.25rem;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    background-color: black;
+    color: white;
+    padding: 1.2rem;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+#tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap:2rem;
+}
+
+.card{
+    position: relative;
+    color:white;
+    max-width: 28rem;
+    min-width: 15rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 26rem;
+    padding:0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#cargando{
+    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
+}
+
+
+@media (min-width: 1024px) {
+
+    input{
+        min-width: 720px;
+    }
+
+    .card{
+        max-width: 20rem;
+    }
+
+    #principal{
+        margin-left: 26rem;
+        margin-right: 26rem;
+    }
+    #tarjetas{
+        display: grid;
+        gap:2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

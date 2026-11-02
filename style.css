@@ -13,8 +13,44 @@ body {
     min-height: 100%;
 }
 
+.electric{
+    background-color: #e2d55d;
+}
+
+.fighting{
+    background-color: #e25d89;
+}
+
+.bug{
+    background-color: #a5c54e;
+}
+
+.dark{
+    background-color: #373834;
+}
+
+.ghost{
+    background-color: #575d92;
+}
+
+.fairy{
+    background-color: #d386bc;
+}
+
+.rock{
+    background-color: #b3a877;
+}
+
 .grass{
     background-color: #a2ce69;
+}
+
+.ground{
+    background-color: #ca864e;
+}
+
+.ice{
+    background-color: #9cd4e2;
 }
 
 .fire{

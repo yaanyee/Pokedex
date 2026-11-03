@@ -41,6 +41,18 @@ body {
     background-color: #b3a877;
 }
 
+.normal{
+    background-color: #a0a0a0;
+}
+
+.psychic{
+    background-color: #f7827e;
+}
+
+.steel{
+    background-color: #62738a;
+}
+
 .grass{
     background-color: #a2ce69;
 }
@@ -62,11 +74,15 @@ body {
 }
 
 .water{
-    background-color: rgb(92, 135, 199);
+    background-color: #5c87c7;
 }
 
 .flying{
     background-color: #a2bfeb;
+}
+
+.dragon{
+    background-color: #4571c4;
 }
 
 body {

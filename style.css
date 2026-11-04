@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-
-:root{
-    --color-electrico:#e2d55d;
-    --color-lucha:#e25d89;
-    --color-bicho:#a5c54e;
-    --color-oscuro:#373834;
-    --color-fantasma:#575d92;
-    --color-hada:#d386bc;
-    --color-roca:#b3a877;
-    --color-normal:#a0a0a0;
-    --color-psiquico:#f7827e;
-    --color-acero:#62738a;
-    --color-planta:#a2ce69;
-    --color-tierra:#ca864e;
-    --color-hielo:#9cd4e2;
-    --color-fuego:#d36255;
-    --color-veneno:#9756dc;
-    --color-agua:#5c87c7;
-    --color-volador:#a2bfeb;
-    --color-dragon:#4571c4;
-
-
-}
+@import url('./variables.css');
 
 * {
     box-sizing: border-box;
@@ -112,7 +90,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: var(--color-background);
     
 }
 
@@ -120,8 +98,8 @@ body > header {
     display:flex;
     justify-content: space-between;
     padding: 1.5rem;
-    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
-    background-color: whitesmoke;
+    box-shadow: 0 5px 10px var(--color-sombra);
+    background-color: var(--color-background);
 }
 
 #logo{
@@ -152,8 +130,8 @@ body > header {
 input {
     padding:1rem;
     border-radius: 0.7rem;
-    background-color: rgb(235, 234, 234);
-    border: 1px solid rgb(155, 155, 155);
+    background-color: var(--color-input-backround);
+    border: 1px solid var(--color-input-border);
     width: 100%;
     height: 3.25rem;
     max-width: 720px;
@@ -163,8 +141,8 @@ input {
 footer {
     position:fixed;
     bottom:0;
-    background-color: black;
-    color: white;
+    background-color: var(--color-black);
+    color: var(--color-background-secundario);
     padding: 1.2rem;
     font-size: 11px;
     width: 100%;
@@ -199,7 +177,7 @@ footer {
 
 .card{
     position: relative;
-    color:white;
+    color:var(--color-background-secundario);
     max-width: 28rem;
     min-width: 15rem;
     width: 100%;
@@ -221,8 +199,8 @@ footer {
 
 .caracteristicas{
     padding-top: 4rem;
-    color:black;
-    background-color: white;
+    color:var(--color-black);
+    background-color: var(--color-background-secundario);
     height: 100%;
     z-index: 1;
     min-width: calc(15rem - 1rem);
@@ -238,7 +216,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-background-secundario);
 }
 
 .elemento{
@@ -259,7 +237,7 @@ footer {
 }
 
 .medida{
-    color: black;
+    color: var(--color-black);
     display: flex;
     font-size: 0.7rem;
     margin-left: 0.3rem;
@@ -299,7 +277,7 @@ footer {
 .barra {
     width: 100%;
     height: 0.3rem;
-    background-color: #ddd;
+    background-color: var(--color-background-barra);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -307,17 +285,17 @@ footer {
 .relleno {
     width: 15%;
     height: 100%;
-    background-color: #000000;
+    background-color: var(--color-black);
     border-radius: 10px;
 }
 
 .cargando{
-    box-shadow: 0 5px 10px rgba(160, 100, 255, 0.25);
-    background-color: white;
+    box-shadow: 0 5px 10px var(--color-sombra);
+    background-color: var(--color-background-secundario);
 }
 
 .interior{
-    background-color: rgb(228, 228, 228);
+    background-color: var(--color-background-cargando);
     border-radius: 1.25rem;
 
     display: flex;

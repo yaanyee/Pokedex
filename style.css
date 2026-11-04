@@ -163,9 +163,8 @@ footer {
 }
 
 .id{
-    opacity: 60%;
+    font-weight: bold;
 }
-
 #tarjetas{
     display: flex;
     justify-content: center;
@@ -266,7 +265,7 @@ footer {
 }
 
 .caracteristica{
-    opacity: 50%;
+    opacity: 80%;
     font-size: 0.78rem;
 }
 

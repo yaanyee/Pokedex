@@ -311,6 +311,14 @@ footer {
     width: 10rem;
 }
 
+.separador{
+    color: #cac5cc;
+}
+
+.card:not(.caracteristicas):not(.interior):hover{
+    transform: scale(1.05);
+}
+
 @media (min-width: 1024px) {
 
     input, form{

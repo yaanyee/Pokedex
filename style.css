@@ -94,7 +94,7 @@ body {
     
 }
 
-body > header {
+#main-header {
     display:flex;
     justify-content: space-between;
     padding: 1.5rem;
@@ -320,10 +320,16 @@ footer {
         min-width: calc(19rem - 1rem);
     }
 
-    #principal{
+    #main-header , #principal{
+        padding-right:18rem;
+        padding-left:18rem;
+    }
+
+    /* #principal{
         margin-left: 26rem;
         margin-right: 26rem;
-    }
+    } */
+
     #tarjetas{
         display: grid;
         gap:2rem;

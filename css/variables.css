@@ -1,7 +1,7 @@
 :root{
     --color-electrico:#e2d55d;
     --color-lucha:#e25d89;
-    --color-bicho:#a5c54e;
+    --color-bicho:#8eac3d;
     --color-oscuro:#373834;
     --color-fantasma:#575d92;
     --color-hada:#d386bc;
@@ -9,13 +9,13 @@
     --color-normal:#a0a0a0;
     --color-psiquico:#f7827e;
     --color-acero:#62738a;
-    --color-planta:#548316;
+    --color-planta:#477e00;
     --color-tierra:#ca864e;
     --color-hielo:#9cd4e2;
     --color-fuego:#CC4738;
     --color-veneno:#924DDB;
-    --color-agua:#5c87c7;
-    --color-volador:#3575D4;
+    --color-agua:#44679c;
+    --color-volador:#1b5fc5;
     --color-dragon:#4571c4;
 
     --color-background:whitesmoke;

@@ -189,33 +189,36 @@ function getPokemons (lista){
   const tarjetas = ( lista.map(pokemon => 
     { 
       const name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
-      
+      const types = (pokemon.types.map(type => type.charAt(0).toUpperCase() + type.slice(1)))
+      const id = `#${String(pokemon.id).padStart(3,"0")}`
+      const elements = (types.map(elemento => 
+        `<div class="elemento ${elemento}">
+            <img class="icono" src="imagenes/iconos/${elemento.toLowerCase()}.svg" alt="Simbolo ${elemento}"/>
+            <p>${elemento}</p>
+        </div>`
+      ))
+      const height = pokemon.height/10;
+      const weight = pokemon.weight/10;
+
       return `<div class="card ${pokemon.types[0]}">
                     <header>
                         <h2 class="nombre">${name}</h2>
-                        <p class="id">${pokemon.id}</p>
+                        <p class="id">${id}</p>
                     </header>
                     <img class="pokemon" src="${pokemon.sprites.front_default}" alt="Foto del pokemon 001">
                     <div class="card caracteristicas">
                         <div class="elementos">
-                            <div class="elemento ${pokemon.types[0]}">
-                                <img class="icono" src="imagenes\iconos\grass.svg" alt="Simbolo hierva"/>
-                                <p>Grass</p>
-                            </div>
-                            <div class="elemento ${pokemon.types[1]}">
-                                <img class="icono" src="imagenes\iconos\poison.svg" alt="Simbolo hierva"/>
-                                <p>Poison</p>
-                            </div>
+                            ${elements}
                         </div>
                         <div class="medidas">
                             <div class="medida">
-                                <img class="icono" src="imagenes\iconos\bascula.svg" alt="Peso del pokemon"/>
-                                <p class="peso" aria-label="6,9 kilogramos">6.9 kg</p>
+                                <img class="icono" src="imagenes/iconos/bascula.svg" alt="Peso del pokemon"/>
+                                <p class="peso" aria-label="${height} kilogramos">${height} kg</p>
                             </div>
                             <p class="separador">|</p>
                             <div class="medida">
-                                <img class="icono" src="imagenes\iconos\regla.svg" alt="Medida del pokemon"/>
-                                <p class="tamano" aria-label="0,7 metros">0.7 m</p>
+                                <img class="icono" src="imagenes/iconos/regla.svg" alt="Medida del pokemon"/>
+                                <p class="tamano" aria-label="${weight} metros">${weight} m</p>
                             </div>
                         </div>
                         <section class="habilidades">

@@ -2,23 +2,28 @@
 
 A Pokédex web application developed as part of my learning journey during my dual vocational training (Dual Education).
 
-The main goal of this project is to build a Pokémon encyclopedia using web technologies, starting with a static interface and progressively evolving towards a dynamic application connected to the [PokéAPI](https://pokeapi.co/).
+The goal of this project is to build a Pokémon encyclopedia using modern web technologies, progressively evolving from a static interface into a dynamic application with interactive features and API integration.
 
 ## About the project
 
-This project consists of a Pokédex where Pokémon are displayed through individual cards containing their images and visual information.
+This project consists of a web-based Pokédex where Pokémon are displayed through individual cards containing their images, types and other relevant information.
 
-At its current stage, the application uses locally stored images and a manually created HTML structure. This allows me to focus on learning and improving my frontend development skills before implementing external API integration.
+The application has evolved from a manually structured HTML interface into a dynamic card generation system using JavaScript. Pokémon data is currently stored in a JavaScript array, allowing the application to automatically generate cards based on the provided information.
 
-The long-term objective is to make the application fully dynamic, retrieving Pokémon data from the PokéAPI and automatically generating the corresponding content.
+The long-term objective is to connect the application directly to the [PokéAPI](https://pokeapi.co/) and eventually introduce React to create a more scalable and component-based architecture.
 
 ## Current features
 
-- Static Pokédex interface built with HTML.
-- Pokémon cards manually defined in the HTML structure.
-- Local Pokémon images and icons stored in the project.
+- Dynamic Pokémon card generation using JavaScript.
+- Pokémon information stored in a structured JavaScript array.
+- Automatic generation of Pokémon names and formatted Pokédex IDs.
+- Pokémon type display with dynamically generated type icons.
+- Pokémon images loaded from the official PokéAPI sprites repository.
+- Pokémon height and weight displayed with automatic unit conversion.
+- Individual card styling based on each Pokémon's primary type.
 - CSS styling for the application's layout and visual appearance.
 - Centralized CSS variables for easier style management.
+- Semantic HTML structure and accessibility attributes.
 
 ## Project structure
 
@@ -29,11 +34,14 @@ Pokedex/
 │   ├── iconos/
 │   └── pokemons/
 │
-├── index.html
+├── css/
+│   ├── variables.css
+│   └── style.css
 │
-├── variables.css
+├── js/
+│   └── pokemon.js
 │
-└── style.css
+└── index.html
 ```
 
 ### File description
@@ -41,47 +49,57 @@ Pokedex/
 | File / Folder | Description |
 |---|---|
 | `imagenes/` | Contains the images and icons used throughout the application. |
-| `imagenes/iconos/` | Stores interface icons. |
-| `imagenes/pokemons/` | Contains Pokémon images used as temporary local assets. |
-| `index.html` | Main HTML file containing the current static application structure and Pokémon cards. |
-| `variables.css` | Centralizes CSS variables used across the project, such as colors and other reusable style values. |
-| `style.css` | Contains the styles responsible for the application's layout, appearance and visual presentation. |
+| `imagenes/iconos/` | Stores Pokémon type icons and interface icons. |
+| `imagenes/pokemons/` | Contains locally stored Pokémon images and temporary assets. |
+| `css/variables.css` | Centralizes CSS variables such as colors and reusable style values. |
+| `css/style.css` | Contains the styles responsible for the application's layout and visual presentation. |
+| `js/pokemon.js` | Contains the Pokémon data and JavaScript logic responsible for dynamically generating Pokémon cards. |
+| `index.html` | Main HTML file containing the application's structure and entry point. |
 
 ## Technologies
 
 The project currently uses:
 
-- **HTML5** – Application structure and content.
+- **HTML5** – Application structure and semantic content.
 - **CSS3** – Styling, layout and visual design.
+- **JavaScript (ES6+)** – Application logic, array manipulation, template literals and dynamic HTML generation.
+- **PokéAPI resources** – Pokémon sprite images hosted in the PokéAPI GitHub repository.
 
 ### Planned technologies
 
-- **JavaScript** – To handle application logic and API communication.
-- **React** – To build a component-based interface and manage dynamic content.
-- **PokéAPI** – External API used to retrieve Pokémon information.
+- **PokéAPI** – Direct API integration to retrieve Pokémon information dynamically instead of relying on manually stored data.
+- **React** – To build a component-based interface and improve application scalability.
 
 ## Future development
 
-The project is currently in an early development and learning stage. The next steps are planned to gradually transform the static application into a dynamic Pokédex.
+The project is continuously evolving as part of my frontend development learning process.
 
 Planned improvements include:
 
-- [ ] Integrate the PokéAPI to retrieve Pokémon data.
-- [ ] Generate Pokémon cards dynamically based on API responses.
-- [ ] Replace temporary local images with data and images provided by the API.
+- [x] Create a static Pokédex interface using HTML and CSS.
+- [x] Organize CSS variables for centralized style management.
+- [x] Create a structured JavaScript dataset containing Pokémon information.
+- [x] Generate Pokémon cards dynamically using JavaScript.
+- [x] Display Pokémon types and their corresponding icons dynamically.
+- [x] Format Pokédex IDs with leading zeros.
+- [x] Display Pokémon height and weight with unit conversion.
+- [ ] Integrate the PokéAPI to retrieve Pokémon data directly.
+- [ ] Replace the manually maintained dataset with API responses.
 - [ ] Implement reusable React components.
 - [ ] Add Pokémon search functionality.
 - [ ] Add filters by Pokémon type.
-- [ ] Display detailed information about each Pokémon.
-- [ ] Improve the application's responsive design.
+- [ ] Display detailed Pokémon statistics and abilities.
+- [ ] Implement interactive features and improve responsive design.
 
 ## Project status
 
 <sub>Work in progress</sub>
 
-This repository is actively being developed as part of my professional learning process during my dual vocational training.
+The project is currently in the dynamic frontend development stage. The initial static interface has been transformed into a JavaScript-driven application capable of generating Pokémon cards from structured data.
 
-The README and project documentation will be updated as new technologies, features and improvements are implemented.
+The next major milestone is integrating the PokéAPI to automate data retrieval and reduce the need for manually maintained Pokémon information.
+
+This repository is actively being developed as part of my professional learning process during my dual vocational training. The README and project documentation will be updated as new technologies, features and improvements are implemented.
 
 ---
 
